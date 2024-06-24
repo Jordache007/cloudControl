@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CloudControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest_sunny" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-3q-qH9">
+                                <rect key="frame" x="0.0" y="59" width="393" height="347"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tir-mI-3Cs">
+                                <rect key="frame" x="140" y="139" width="113" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbA-ZL-UOA">
+                                <rect key="frame" x="130" y="207" width="133" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rbA-ZL-UOA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="80d-wM-9zm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rbA-ZL-UOA" secondAttribute="trailing" constant="130" id="B0L-N7-FkN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6b-3q-qH9" secondAttribute="trailing" id="JtK-va-gYH"/>
+                            <constraint firstItem="L6b-3q-qH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QNa-uo-CXP"/>
+                            <constraint firstItem="rbA-ZL-UOA" firstAttribute="top" secondItem="Tir-mI-3Cs" secondAttribute="bottom" constant="25" id="Qh4-T7-rGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tir-mI-3Cs" secondAttribute="trailing" constant="140" id="RDF-kd-2qd"/>
+                            <constraint firstItem="Tir-mI-3Cs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Tmn-ky-4FG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L6b-3q-qH9" secondAttribute="bottom" constant="412" id="aCB-ue-zhH"/>
+                            <constraint firstItem="Tir-mI-3Cs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="fOF-Qh-6hV"/>
+                            <constraint firstItem="L6b-3q-qH9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sCU-Ot-KtS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="L6b-3q-qH9" id="TZN-DI-qTG"/>
+                        <outlet property="degrees" destination="Tir-mI-3Cs" id="S8J-lO-hYL"/>
+                        <outlet property="weatherText" destination="rbA-ZL-UOA" id="ZFb-fT-7gQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forest_sunny" width="360" height="321"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
